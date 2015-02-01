@@ -48,7 +48,6 @@ class Mission
 		"A3_Structures_F_Naval_Piers",
 		"A3_Structures_F_Households_House_Big01",
 		"a3_structures_f_mil_bagfence",
-		"a3_structures_f_mil_bagbunker",
 		"a3_structures_f_items_luggage",
 		"a3_structures_f_items_valuables",
 		"a3_structures_f_items_cans",
@@ -102,6 +101,8 @@ class Mission
 		"A3_Data_F",
 		"a3_roads_f",
 		"A3_Soft_F_EPC_Truck_03",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Boat_F_SDV_01",
 		"a3_map_altis"
 	};
 	randomSeed=14957468;
@@ -2071,7 +2072,6 @@ class Mission
 					id=159;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 				};
@@ -2080,7 +2080,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=110;
+		items=148;
 		class Item0
 		{
 			position[]={5892.3325,225.05762,20124.521};
@@ -3132,7 +3132,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
-			text="chopshop1_biglight_0_1";
+			text="ownerChange1_biglight_0_1";
 		};
 		class Item108
 		{
@@ -3152,12 +3152,359 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
-			text="chopshop1_biglight_0_1_1";
+			text="ownerChange1_biglight_0_1_1";
+		};
+		class Item110
+		{
+			position[]={5642.5537,223.2621,20074.689};
+			id=270;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			skill=0.60000002;
+			text="chopshop2_helipad_1";
+		};
+		class Item111
+		{
+			position[]={5640.2813,224.13428,20100.283};
+			id=271;
+			side="EMPTY";
+			vehicle="Flag_White_F";
+			skill=0.60000002;
+			init="this setFlagTexture ""custom_textures\nana_flag_2.jpg""";
+		};
+		class Item112
+		{
+			position[]={5633.874,223.83882,20067.844};
+			id=272;
+			side="EMPTY";
+			vehicle="Land_Garbage_square5_F";
+			skill=0.60000002;
+		};
+		class Item113
+		{
+			position[]={5651.4082,221.99225,20079.18};
+			id=273;
+			side="EMPTY";
+			vehicle="Land_JunkPile_F";
+			skill=0.60000002;
+		};
+		class Item114
+		{
+			position[]={5635.4131,223.64241,20070.342};
+			id=274;
+			side="EMPTY";
+			vehicle="Land_JunkPile_F";
+			skill=0.60000002;
+		};
+		class Item115
+		{
+			position[]={5642.7051,223.29417,20075.303};
+			offsetY=4;
+			id=275;
+			side="EMPTY";
+			vehicle="Sign_Arrow_Large_F";
+			skill=0.60000002;
+			text="chopshop2_arrow_1";
+		};
+		class Item116
+		{
+			position[]={5628.4111,225.44687,20090.994};
+			azimut=21.4522;
+			id=276;
+			side="EMPTY";
+			vehicle="Land_Wreck_Car_F";
+			skill=0.60000002;
+		};
+		class Item117
+		{
+			position[]={5629.9141,224.1416,20073.674};
+			azimut=-186.895;
+			id=277;
+			side="EMPTY";
+			vehicle="Land_Wreck_Car3_F";
+			skill=0.60000002;
+		};
+		class Item118
+		{
+			position[]={5613.5469,226.24039,20095.787};
+			azimut=-131.842;
+			id=278;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+			text="chopshop2_biglight_0_3";
+		};
+		class Item119
+		{
+			position[]={5632.5469,225.19231,20095.959};
+			azimut=-92.412598;
+			id=279;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+			text="chopshop2_biglight_1_1";
+		};
+		class Item120
+		{
+			position[]={5619.7715,227.23148,20126.146};
+			azimut=-63.269501;
+			id=280;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_F";
+			skill=0.60000002;
+			text="chopshop2_biglight_2_1";
+		};
+		class Item121
+		{
+			position[]={5639.0176,223.69582,20080.424};
+			id=281;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_21";
+		};
+		class Item122
+		{
+			position[]={5642.7256,223.47858,20080.342};
+			id=282;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_1_1";
+		};
+		class Item123
+		{
+			position[]={5646.8076,223.14986,20080.383};
+			id=283;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_2_1";
+		};
+		class Item124
+		{
+			position[]={5648.7646,222.80174,20078.217};
+			id=284;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_3_1";
+		};
+		class Item125
+		{
+			position[]={5648.6826,222.83524,20074.592};
+			id=285;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_4_1";
+		};
+		class Item126
+		{
+			position[]={5648.7236,222.57063,20070.926};
+			id=286;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_5_1";
+		};
+		class Item127
+		{
+			position[]={5648.6699,222.56071,20066.963};
+			id=287;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_6_1";
+		};
+		class Item128
+		{
+			position[]={5648.541,222.63531,20062.604};
+			id=288;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_7_1";
+		};
+		class Item129
+		{
+			position[]={5648.542,222.42485,20058.549};
+			id=289;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_8_1";
+		};
+		class Item130
+		{
+			position[]={5648.707,222.14365,20054.6};
+			id=290;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_9_1";
+		};
+		class Item131
+		{
+			position[]={5648.5566,222.32372,20050.334};
+			id=291;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_10_1";
+		};
+		class Item132
+		{
+			position[]={5647.252,222.495,20048.025};
+			id=292;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_11_2";
+		};
+		class Item133
+		{
+			position[]={5638.8828,222.89273,20048.236};
+			id=293;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_12_1";
+		};
+		class Item134
+		{
+			position[]={5643.0127,222.62573,20048.291};
+			id=294;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_11_1_1";
+		};
+		class Item135
+		{
+			position[]={5636.6621,223.19186,20050.459};
+			id=295;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_13_1";
+		};
+		class Item136
+		{
+			position[]={5636.6631,223.04453,20054.699};
+			id=296;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_14_1";
+		};
+		class Item137
+		{
+			position[]={5636.46,223.51422,20074.365};
+			id=297;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_15_1";
+		};
+		class Item138
+		{
+			position[]={5636.4619,223.73409,20078.201};
+			id=298;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_16_1";
+		};
+		class Item139
+		{
+			position[]={5636.7969,223.07918,20058.139};
+			id=299;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_17_1";
+		};
+		class Item140
+		{
+			position[]={5636.7295,223.57875,20062.447};
+			id=300;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_18_1";
+		};
+		class Item141
+		{
+			position[]={5636.3936,223.60953,20066.756};
+			id=301;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_19_1";
+		};
+		class Item142
+		{
+			position[]={5636.5283,223.5157,20070.729};
+			id=302;
+			side="EMPTY";
+			vehicle="Land_Flush_Light_red_F";
+			skill=0.60000002;
+			text="chopshop2_smalllight_20_1";
+		};
+		class Item143
+		{
+			position[]={5654.1035,221.69028,20095.037};
+			azimut=-92.412598;
+			id=303;
+			side="EMPTY";
+			vehicle="Land_LampHalogen_F";
+			skill=0.60000002;
+			text="chopshop2_biglight_1_1_1";
+		};
+		class Item144
+		{
+			position[]={5626.1357,225.98438,20105.254};
+			azimut=300;
+			offsetY=0.40000001;
+			id=304;
+			side="EMPTY";
+			vehicle="B_SDV_01_F";
+			skill=0.60000002;
+		};
+		class Item145
+		{
+			position[]={5622.2095,226.30318,20106.674};
+			offsetY=0.40000001;
+			id=305;
+			side="EMPTY";
+			vehicle="Land_u_Shed_Ind_F";
+			skill=0.60000002;
+		};
+		class Item146
+		{
+			position[]={5631.7622,225.65343,20108.732};
+			azimut=185;
+			id=306;
+			side="EMPTY";
+			vehicle="Land_Wreck_CarDismantled_F";
+			skill=0.60000002;
+			text="ChopShop2_WreckedCar";
+		};
+		class Item147
+		{
+			position[]={5653.9868,221.38936,20086.021};
+			azimut=130;
+			offsetY=0.40000001;
+			id=307;
+			side="EMPTY";
+			vehicle="Land_Wreck_Heli_Attack_01_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers
 	{
-		items=195;
+		items=196;
 		class Item0
 		{
 			position[]={3612.1487,12.11851,13020.892};
@@ -4480,7 +4827,7 @@ class Mission
 		{
 			position[]={14338.722,1.1035755,15331.491};
 			name="chopshop1_marker";
-			text="Chop Shop";
+			text="Chop Shop - Center";
 			type="respawn_unknown";
 			colorName="ColorEAST";
 		};
@@ -4692,10 +5039,18 @@ class Mission
 			type="o_service";
 			colorName="ColorGUER";
 		};
+		class Item195
+		{
+			position[]={5642.6113,223.26852,20074.867};
+			name="chopshop1_marker_2";
+			text="Chop Shop-East";
+			type="respawn_unknown";
+			colorName="ColorEAST";
+		};
 	};
 	class Sensors
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={14338.727,0,15320.774};
@@ -4745,6 +5100,23 @@ class Mission
 			name="changeowner_trigger_1";
 			expCond="((""LandVehicle"" countType thislist > 0) || (""Air"" countType thislist > 0) || (""Ship"" countType thislist > 0)) && ((getpos (thislist select 0)) select 2 < 1)";
 			expActiv="_xhandle= (thislist select 0) execVM ""addons\changeowner\changeowner.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={5642.6162,223.08858,20064.15};
+			a=6;
+			b=16;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="chopshop2_trigger_1";
+			expCond="((""LandVehicle"" countType thislist > 0) || (""Air"" countType thislist > 0) || (""Ship"" countType thislist > 0)) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""addons\chopshop\chopShop.sqf"";";
 			class Effects
 			{
 			};
